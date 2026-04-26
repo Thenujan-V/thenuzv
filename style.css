@@ -191,6 +191,16 @@ section {
   padding-top: 20vh;
 }
 
+.home-details {
+  position: relative;
+  z-index: 3;
+}
+
+.home-img {
+  position: relative;
+  z-index: 1;
+}
+
 .home-details h1 .span1 {
   font-size: clamp(40px, 6vw, 5vw);
   background: linear-gradient(
@@ -236,6 +246,8 @@ section {
 }
 
 .home-details .btn-sci {
+  position: relative;
+  z-index: 4;
   display: flex;
   align-items: center;
   margin-top: 2vw;
@@ -243,6 +255,9 @@ section {
 
 .btn {
   display: inline-block;
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
   padding: 0.7vw 1.6vw;
   background: linear-gradient(
     45deg,
@@ -280,6 +295,9 @@ section {
 
 .home-details .btn-sci .sci a {
   display: inline-flex;
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
   padding: 0.8vw;
   border: 0.1rem solid var(--main-color);
   border-radius: 50%;
@@ -707,22 +725,32 @@ background-image: linear-gradient(to bottom, rgba(15, 7, 22, .9), transparent 80
   align-self: flex-end;
   font-size: 15px;
   padding: 1rem 1.5rem;
-  background: linear-gradient(
-    45deg,
-    var(--main-gradient-second),
-    var(--main-gradient-first)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: rgba(15, 7, 22, 0.82);
+  border: 1px solid rgba(185, 169, 217, 0.45);
+  color: var(--main-gradient-second);
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  /* border: 2px solid var(--main-gradient-first); */
   border-radius: 10px;
   box-shadow: 0 0 1.5rem var(--main-gradient-first);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   animation: zoomOut 2s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-pattern .content .resume-download:hover {
+  color: var(--white-color);
+  border-color: var(--main-gradient-first);
+  background: rgba(94, 51, 179, 0.18);
+  box-shadow: 0 0 2rem rgba(94, 51, 179, 0.75);
+}
+
+.hero-pattern .content .resume-download i {
+  color: var(--main-gradient-second);
 }
 
 @keyframes zoomOut {

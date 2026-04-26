@@ -54,7 +54,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.contact-section .outbox .right button {
+.contact-section .outbox .right .contact-link {
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -76,36 +76,31 @@
   background-position: 0%;
   -webkit-transition: background 400ms ease-in-out;
   transition: background 400ms ease-in-out;
-}
-.contact-section .outbox .right button a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: .8rem;
-  color: var(--main-gradient-first);
+  text-decoration: none;
 }
 
-.contact-section .outbox .right button img {
+.contact-section .outbox .right .contact-link img {
   width: 20px;
   height: 20px;
   /* filter: brightness(1.5); */
 }
 
-.contact-section .outbox .right button span {
+.contact-section .outbox .right .contact-link span {
   font-size: clamp(14px, 10vw, 1vw);
   font-weight: 500;
+  color: var(--main-gradient-first);
 }
 
-.contact-section .outbox .right button:hover {
+.contact-section .outbox .right .contact-link:hover {
   background-position: 100%;
   border: 1px solid var(--bg-color);
 }
 
-.contact-section .outbox .right button:hover img {
+.contact-section .outbox .right .contact-link:hover img {
   filter: brightness(0);
 }
 
-.contact-section .outbox .right button:hover span {
+.contact-section .outbox .right .contact-link:hover span {
   color: var(--bg-color);
 }
 
