@@ -702,7 +702,7 @@ background-image: linear-gradient(to bottom, rgba(15, 7, 22, .9), transparent 80
 
 }
 
-.hero-pattern .content button {
+.hero-pattern .content .resume-download {
   justify-self: flex-end;
   align-self: flex-end;
   font-size: 15px;
