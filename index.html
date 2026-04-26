@@ -16,23 +16,26 @@
 </head>
 
 <body>
+  <div class="unsupported-screen">
+    <i class="fa-solid fa-mobile-screen-button"></i>
+    <h2>Screen Too Small</h2>
+    <p>Please use a device with a wider screen to view this portfolio.</p>
+  </div>
   <header data-aos="fade-down" data-aos-delay="300">
     <a href="#" class="logo">Thenuz.</a>
-    <input type="checkbox" id="menu-toggle" hidden />
-    <label for="menu-toggle" class="menu-icon">
-      <i class="fa-solid fa-bars fa-X" id="menu-icon"></i>
-    </label>
-
-    <nav class="nav-links">
-      <a href="#" class="active">Home</a>
-      <a href="#about-section">About</a>
-      <a href="#resume-section">Resume</a>
-      <a href="#skills-section">Skills</a>
-      <a href="#projects-section">Projects</a>
-      <a href="#articles-section">Articles</a>
-      <a href="#contact-section">Contact</a>
-    </nav>
+    <button class="menu-icon" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars" id="menu-icon-i"></i>
+    </button>
   </header>
+  <nav class="nav-links" id="nav-links">
+    <a href="#" class="active">Home</a>
+    <a href="#about-section">About</a>
+    <a href="#resume-section">Resume</a>
+    <a href="#skills-section">Skills</a>
+    <a href="#projects-section">Projects</a>
+    <a href="#articles-section">Articles</a>
+    <a href="#contact-section">Contact</a>
+  </nav>
 
   <!-- home section -->
   <section class="home-section">
@@ -50,18 +53,18 @@
           impression.
         </p>
         <div class="btn-sci" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-          <a href="#" class="btn" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Resume</a>
+          <a href="assets/Thenujan_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Resume</a>
           <div class="sci">
-            <a href="#" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <a href="https://www.linkedin.com/in/velthasan-thenujan-919abb242" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="#" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <a href="https://github.com/Thenujan-V" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="#" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <a href="https://www.hackerrank.com/profile/vthenujan7400" target="_blank" rel="noopener noreferrer" aria-label="HackerRank" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <i class="fa-brands fa-hackerrank"></i>
             </a>
-            <a href="#" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <a href="https://wa.me/94705054864" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
           </div>
@@ -126,7 +129,7 @@
           </p>
         </div>
         <div class="content-img animation-zoom-out">
-          <img src="assets/aboutImg.png" alt="" />
+          <img src="assets/aboutImg.png" alt="Thenujan profile photo" />
         </div>
         <div class="content content-second animation-fade-in">
           <p>
@@ -156,9 +159,9 @@
             Explore my academic background and professional journey below.
             Click the button to download my complete resume.
           </p>
-          <button>
+          <a href="assets/Thenujan_CV.pdf" download="Thenujan_CV.pdf" class="resume-download">
             <i class="fa-regular fa-file-lines fa-2x"></i>Download Resume
-          </button>
+          </a>
         </div>
       </div>
 
@@ -171,47 +174,49 @@
               <img src="assets/auradot_logo.png" alt="auradot_logo" />
             </div>
             <div class="details">
-              <h3 class="animation-fade-in-same">Software Engineer Intern</h3>
+              <h3 class="animation-fade-in-same">Software Engineer Intern &amp; Trainee</h3>
               <p class="company animation-fade-in-same">
                 <a href="http://auradot.com/">Auradot (Pvt) Ltd.</a>
               </p>
-              <p class="duration animation-fade-in-same">Feb 2025 - August 2025</p>
+              <p class="duration animation-fade-in-same">Feb 2025 - present</p>
               <div class="description animation-fade-in-same">
                 <p>
-                  - Contributed to a large-scale microservices-based project
-                  using Spring Boot (Java 17) and Angular as the frontend
-                  framework.
+                  - Engineered secure document storage by implementing hybrid
+                  and symmetric encryption/decryption mechanisms (AES/RSA) to
+                  ensure data privacy and access control.
                 </p>
                 <p>
-                  - Designed and implemented backend services with Spring
-                  Boot, applying layered architecture and best practices in
-                  clean code and modular design.
+                  - Streamlined CI/CD workflows by configuring automated
+                  pipelines using Bitbucket Pipelines, Docker, Nginx, and Azure,
+                  accelerating the transition from development to production
+                  deployment.
                 </p>
                 <p>
-                  - Integrated MySQL databases with JPA/Hibernate for
-                  efficient data persistence and complex queries.
+                  - Developed a real-time notification engine using WebSockets
+                  and Socket.IO to provide instant system updates on
+                  document-related events.
                 </p>
                 <p>
-                  - Worked in a collaborative Agile environment, participating
-                  in sprint planning, daily standups, and code reviews.
+                  - Enhanced data privacy through the implementation of a
+                  document masking feature, protecting sensitive information
+                  within the viewer interface.
                 </p>
                 <p>
-                  - Applied Git for version control and collaborated with team
-                  members via Git branching and pull requests.
+                  - Optimized collaboration tools by developing multi-channel
+                  document sharing (Email, SMS, and Internal) and a robust
+                  versioning system for efficient document lifecycle management.
+                </p>
+                <p>
+                  - Architected a high-complexity Angular frontend featuring a
+                  modular component-based UI, integrating digital signatures,
+                  coordinate-based PDF manipulation, and dynamic document
+                  masking to protect sensitive data.
                 </p>
               </div>
               <div class="technologies animation-fade-in-same">
                 <div>
                   <span>Java</span>
                   <img src="assets/java.png" alt="java_logo" />
-                </div>
-                <div>
-                  <span>TypeScript</span>
-                  <img src="assets/ts.png" alt="js_logo" />
-                </div>
-                <div>
-                  <span>JavaScript</span>
-                  <img src="assets/js.png" alt="js_logo" />
                 </div>
                 <div>
                   <span>Spring Boot</span>
@@ -226,12 +231,24 @@
                   <img src="assets/mysql.png" alt="mysql_logo" />
                 </div>
                 <div>
-                  <span>Hibernet</span>
-                  <img src="assets/jpa.png" alt="hibernet_logo" />
+                  <span>Keycloak</span>
+                  <img src="assets/keycloak.png" alt="keycloak_logo" />
                 </div>
                 <div>
                   <span>Tailwind</span>
                   <img src="assets/tailwind.png" alt="tailwind_logo" />
+                </div>
+                <div>
+                  <span>Elasticsearch</span>
+                  <img src="assets/elasticsearch.png" alt="elasticsearch_logo" />
+                </div>
+                <div>
+                  <span>Docker</span>
+                  <img src="assets/docker.png" alt="docker_logo" />
+                </div>
+                <div>
+                  <span>Bitbucket</span>
+                  <img src="assets/bitbucket.png" alt="bitbucket_logo" />
                 </div>
               </div>
             </div>
@@ -255,7 +272,7 @@
               <p class="company animation-fade-in-same">
                 <a href="https://www.kln.ac.lk//">University of Kelaniya</a>
               </p>
-              <p class="duration animation-fade-in-same">Aug 2021 - present</p>
+              <p class="duration animation-fade-in-same">Aug 2022 - Feb 2026</p>
               <p class="gpa animation-fade-in-same">
                 <i class="fa-solid fa-circle-notch fa-xs"></i> GPA: 3.357/4.0
               </p>
@@ -406,7 +423,7 @@
             </div>
             <div class="skill animation-zoom-in">
               <span>HTML</span>
-              <img src="assets/html.png" alt=html_logo" />
+              <img src="assets/html.png" alt="html_logo" />
             </div>
             <div class="skill animation-zoom-in">
               <span>CSS</span>
@@ -422,7 +439,7 @@
             <h2>Core-Concept</h2>
             <span>
               <i class="fa-solid fa-chevron-right fa-xl right-icon"></i>
-              <i class="fa-solid fa-chevron-down fa-xl down-icon"></i>`
+              <i class="fa-solid fa-chevron-down fa-xl down-icon"></i>
             </span>
           </button>
           <div class="contents">
@@ -459,9 +476,6 @@
                 <i class="fa-regular fa-square-full fa-sm"></i>
                 <span>Security Best Practices</span>
               </div>
-            </div>
-            <div class="gif">
-              <img src="assets/coding_gif.gif" alt="">
             </div>
           </div>
         </div>
@@ -563,9 +577,38 @@
       </div>
       <div class="projects-content">
         <div class="content">
+          <div class="project animation-fade-in reactjs">
+            <div class="img">
+              <img src="./assets/dewali.jpg" alt="SE Dewali UOK project screenshot">
+              <div class="overlay">
+                <a href="https://github.com/Thenujan-V/SE-dewali" target="_blank">
+                  <img src="./assets/github.gif" alt="github_icon">
+                </a>
+              </div>
+            </div>
+            <div class="details">
+              <h3>SE Dewali UOK</h3>
+              <p>Voting Application</p>
+              <span>Real-time voting platform for a Diwali singing competition, featuring event details, galleries, and a secure voting system within a controlled environment.</span>
+              <div class="tech">
+                <div>
+                  <span>Next.js</span>
+                  <img src="assets/next-js.png" alt="nextjs_logo" />
+                </div>
+                <div>
+                  <span>React</span>
+                  <img src="assets/react.png" alt="react_logo" />
+                </div>
+                <div>
+                  <span>Firebase</span>
+                  <img src="assets/firebase.webp" alt="firebase_logo" />
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="project animation-fade-in nodejs reactjs">
             <div class="img">
-              <img src="./assets/driving_school_landing.jfif" alt="">
+              <img src="./assets/oneclick.jpg" alt="One Click Studio project screenshot">
               <div class="overlay">
                 <a href="https://github.com/Thenujan-V/photo_studio" target="_blank">
                   <img src="./assets/github.gif" alt="github_icon">
@@ -617,7 +660,7 @@
           </div>  
           <div class="project animation-fade-in nodejs reactjs">
             <div class="img">
-              <img src="./assets/driving_landing.jpg" alt="">
+              <img src="./assets/driving.jpg" alt="Sara Learners project screenshot">
               <div class="overlay">
                 <a href="https://github.com/Thenujan-V/Driving_school_management_system" target="_blank">
                   <img src="./assets/github.gif" alt="github_icon">
@@ -669,7 +712,7 @@
           </div>
           <div class="project animation-fade-in springboot">
             <div class="img">
-              <img src="./assets/pit_shop_landing.jpg" alt="">
+              <img src="./assets/pit_shop_landing.jpg" alt="Pit Shop project screenshot">
               <div class="overlay">
                 <a href="https://github.com/Thenujan-V/Pit-Shop-Service-Booking-App" target="_blank">
                   <img src="./assets/github.gif" alt="github_icon">
@@ -680,7 +723,7 @@
               </div>
             </div>
             <div class="details">
-              <h3>Pit Book</h3>
+              <h3>Pit Shop</h3>
               <p>Pit Shop Booking (Microservices)</p>
               <span>A microservices-based app for vehicle service scheduling. Optimizes shop efficiency by allowing users to book slots and managers to track real-time availability.</span>
               <div class="tech">
@@ -717,7 +760,7 @@
           </div>
           <div class="project animation-fade-in nodejs reactjs">
             <div class="img">
-              <img src="./assets/flower_landing.jpg" alt="">
+              <img src="./assets/flower.jpg" alt="Blooms and Whimsy project screenshot">
               <div class="overlay">
                 <a href="https://github.com/Thenujan-V/Decoration-Shop" target="_blank">
                   <img src="./assets/github.gif" alt="github_icon">
@@ -769,7 +812,7 @@
           </div>
           <div class="project animation-fade-in springboot reactjs">
             <div class="img">
-              <img src="./assets/driving_landing.jpg" alt="">
+              <img src="./assets/school.jpg" alt="E-learning project screenshot">
               <div class="overlay">
                 <a href="https://github.com/Thenujan-V/school_management_system" target="_blank">
                   <img src="./assets/github.gif" alt="github_icon">
@@ -825,7 +868,7 @@
           </div>
           <div class="project animation-fade-in springboot reactjs">
             <div class="img">
-              <img src="./assets/todo_landing.jpg" alt="">
+              <img src="./assets/perfume.jpg" alt="Perfume shop project screenshot">
               <div class="overlay">
                 <a href="https://github.com/Thenujan-V/Perfume_shop_web_app" target="_blank">
                   <img src="./assets/github.gif" alt="github_icon">
@@ -879,6 +922,35 @@
               </div>
             </div>
           </div>
+          <div class="project animation-fade-in reactjs">
+            <div class="img">
+              <img src="./assets/todo.png" alt="To-do application project screenshot">
+              <div class="overlay">
+                <a href="https://github.com/Thenujan-V/Modern-Todo-List" target="_blank">
+                  <img src="./assets/github.gif" alt="github_icon">
+                </a>
+              </div>
+            </div>
+            <div class="details">
+              <h3>To-do Application</h3>
+              <p>Simple Task Management Application</p>
+              <span>A lightweight modern to-do application for managing daily tasks, with features to add, edit, delete and track task completion.</span>
+              <div class="tech">
+                <div>
+                  <span>JavaScript</span>
+                  <img src="assets/js.png" alt="javascript_logo" />
+                </div>
+                <div>
+                  <span>HTML</span>
+                  <img src="assets/html.png" alt="html_logo" />
+                </div>
+                <div>
+                  <span>CSS</span>
+                  <img src="assets/css.png" alt="css_logo" />
+                </div>
+              </div>
+            </div>
+          </div>
           
         </div>
       </div>
@@ -921,109 +993,100 @@
         </button>
       </div>
       <div class="articles-content">
-        <div class="content animation-fade-in medium java">
+        <div class="content animation-fade-in linkedin js">
           <div class="left">
             <div class="top">
               01
             </div>
             <div class="center">
-              Medium
+              LinkedIn
             </div>
             <div class="bottom">
-              Aug 23, 2025
+              Aug 23, 2024
             </div>
           </div>
           <div class="right">
             <div class="top">
-              <a href="#" target="_blank">Understanding Microservices Architecture: A Comprehensive Guide</a>
+              <a href="https://www.linkedin.com/in/velthasan-thenujan-919abb242" target="_blank">From Session IDs to Stateless Tokens — How JWT Became the Star of Modern Auth (Part 1)</a>
             </div>
             <div class="center">
               <p>
-                Microservices architecture is an architectural style that
-                structures an application as a collection of small, autonomous
-                services modeled around a business domain. Each service is
-                self-contained and implements a single business capability.
+                Part 1 of the JWT series — what tokens are, how SWT, SAML and OAuth compare, and the origin story of why JWT was born. Perfect for understanding the "why" behind JWT.
               </p>
             </div>
             <div class="bottom">
               <div class="left">
-                10 min read
+                5 min read
               </div>
               <div class="right">
-                <a href="#" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://www.linkedin.com/in/velthasan-thenujan-919abb242" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="content animation-fade-in medium java">
+        <div class="content animation-fade-in linkedin java">
           <div class="left">
             <div class="top">
               02
             </div>
             <div class="center">
-              Medium
+              LinkedIn
             </div>
             <div class="bottom">
-              Aug 23, 2025
+              Aug 23, 2024
             </div>
           </div>
           <div class="right">
             <div class="top">
-              <a href="#" target="_blank">Understanding Microservices Architecture: A Comprehensive Guide</a>
+              <a href="https://www.linkedin.com/in/velthasan-thenujan-919abb242" target="_blank">From @Autowired to Constructor Injection — The First Step Toward Clean Code in Spring Boot</a>
             </div>
             <div class="center">
               <p>
-                Microservices architecture is an architectural style that
-                structures an application as a collection of small, autonomous
-                services modeled around a business domain. Each service is
-                self-contained and implements a single business capability.
+                Why @Autowired field injection causes problems, how constructor injection with final leads to cleaner testable code, and how Lombok's @RequiredArgsConstructor simplifies everything.
               </p>
             </div>
             <div class="bottom">
               <div class="left">
-                10 min read
+                7 min read
               </div>
               <div class="right">
-                <a href="#" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://www.linkedin.com/in/velthasan-thenujan-919abb242" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="content animation-fade-in medium js">
+        <div class="content animation-fade-in linkedin java">
           <div class="left">
             <div class="top">
               03
             </div>
             <div class="center">
-              Medium
+              LinkedIn
             </div>
             <div class="bottom">
-              Aug 23, 2025
+              Aug 23, 2024
             </div>
           </div>
           <div class="right">
             <div class="top">
-              <a href="#" target="_blank">Understanding Microservices Architecture: A Comprehensive Guide</a>
+              <a href="https://www.linkedin.com/in/velthasan-thenujan-919abb242" target="_blank">Unlocking Java Abstraction &amp; Interfaces — A Beginner's Guide</a>
             </div>
             <div class="center">
               <p>
-                Microservices architecture is an architectural style that
-                structures an application as a collection of small, autonomous
-                services modeled around a business domain. Each service is
-                self-contained and implements a single business capability.
+                A beginner-friendly guide to abstraction and interfaces in Java, covering Java 8 and 9 upgrades, default and private methods, and why they are game-changers for clean modular code.
               </p>
             </div>
             <div class="bottom">
               <div class="left">
-                10 min read
+                6 min read
               </div>
               <div class="right">
-                <a href="#" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://www.linkedin.com/in/velthasan-thenujan-919abb242" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="content animation-fade-in linkedin js">
+        <div class="content animation-fade-in medium java">
           <div class="left">
             <div class="top">
               04
@@ -1032,32 +1095,29 @@
               Medium
             </div>
             <div class="bottom">
-              Aug 23, 2025
+              Aug 23, 2024
             </div>
           </div>
           <div class="right">
             <div class="top">
-              <a href="#" target="_blank">Understanding Microservices Architecture: A Comprehensive Guide</a>
+              <a href="https://medium.com/@iamthenujan/a-deep-dive-into-java-strings-from-immutable-strings-to-thread-safe-buffers-18865a6d2529" target="_blank">A Deep Dive into Java Strings — From Immutable Strings to Thread-Safe Buffers</a>
             </div>
             <div class="center">
               <p>
-                Microservices architecture is an architectural style that
-                structures an application as a collection of small, autonomous
-                services modeled around a business domain. Each service is
-                self-contained and implements a single business capability.
+                A detailed breakdown of how Java handles strings under the hood — covering immutability, thread safety, real performance benchmarks, and multi-threading behaviour.
               </p>
             </div>
             <div class="bottom">
               <div class="left">
-                10 min read
+                8 min read
               </div>
               <div class="right">
-                <a href="#" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://medium.com/@iamthenujan/a-deep-dive-into-java-strings-from-immutable-strings-to-thread-safe-buffers-18865a6d2529" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="content animation-fade-in linkedin js">
+        <div class="content animation-fade-in medium js">
           <div class="left">
             <div class="top">
               05
@@ -1066,32 +1126,29 @@
               Medium
             </div>
             <div class="bottom">
-              Aug 23, 2025
+              Aug 23, 2024
             </div>
           </div>
           <div class="right">
             <div class="top">
-              <a href="#" target="_blank">Understanding Microservices Architecture: A Comprehensive Guide</a>
+              <a href="https://medium.com/@iamthenujan/from-tokens-to-jwt-why-json-web-tokens-became-the-standard-for-modern-authentication-921014eac280" target="_blank">From Tokens to JWT — Why JSON Web Tokens Became the Standard for Modern Authentication</a>
             </div>
             <div class="center">
               <p>
-                Microservices architecture is an architectural style that
-                structures an application as a collection of small, autonomous
-                services modeled around a business domain. Each service is
-                self-contained and implements a single business capability.
+                From session IDs to stateless tokens — covering what tokens are, how SWT, SAML, and OAuth work, and why JWT became the star of modern authentication.
               </p>
             </div>
             <div class="bottom">
               <div class="left">
-                10 min read
+                8 min read
               </div>
               <div class="right">
-                <a href="#" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://medium.com/@iamthenujan/from-tokens-to-jwt-why-json-web-tokens-became-the-standard-for-modern-authentication-921014eac280" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="content animation-fade-in linkedin java" style="margin-bottom: 40px;">
+        <div class="content animation-fade-in medium java" style="margin-bottom: 40px;">
           <div class="left">
             <div class="top">
               06
@@ -1100,19 +1157,16 @@
               Medium
             </div>
             <div class="bottom">
-              Aug 23, 2025
+              Aug 23, 2024
             </div>
           </div>
           <div class="right">
             <div class="top">
-              <a href="#" target="_blank">Understanding Microservices Architecture: A Comprehensive Guide</a>
+              <a href="https://medium.com/@iamthenujan/why-large-scale-projects-use-microservices-architecture-ff3c694a9c59" target="_blank">Why Large-Scale Projects Choose Microservices Architecture</a>
             </div>
             <div class="center">
               <p>
-                Microservices architecture is an architectural style that
-                structures an application as a collection of small, autonomous
-                services modeled around a business domain. Each service is
-                self-contained and implements a single business capability.
+                Breaking down what software architecture is, the evolution from monoliths to microservices, tools that power them, real-world use cases, and must-know design patterns for resilient systems.
               </p>
             </div>
             <div class="bottom">
@@ -1120,7 +1174,7 @@
                 10 min read
               </div>
               <div class="right">
-                <a href="#" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://medium.com/@iamthenujan/why-large-scale-projects-use-microservices-architecture-ff3c694a9c59" target="_blank">Read Article <i class="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
           </div>
@@ -1144,10 +1198,11 @@
           I’m open to full-time roles or freelance projects. A professional and reliable worker, available anytime to deliver quality results.
         </p>
         <div class="">
-          <button>
+           <button>          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vthenujan7400@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Send email to Thenujan">
             <img src="assets/send.png" alt="send-icon">
             <span>Get in touch</span>
-          </button>
+          </a>
+        </button>
         </div>
       </div>
     </div>
@@ -1158,10 +1213,10 @@
         <span>© <span id="currentYear"></span> Thenujan Velthasan. All rights reserved.</span>
       </div>
       <div class="right">
-        <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-medium-m fa-xl"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+        <a href="https://www.linkedin.com/in/velthasan-thenujan-919abb242" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+        <a href="https://github.com/Thenujan-V" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github fa-xl"></i></a>
+        <a href="https://medium.com/@iamthenujan" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fa-brands fa-medium-m fa-xl"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vthenujan7400@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fa-regular fa-envelope fa-xl"></i></a>
       </div>
     </div>
   </footer>
