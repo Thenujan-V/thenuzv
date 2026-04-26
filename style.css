@@ -902,7 +902,7 @@ background-image: linear-gradient(to bottom, rgba(15, 7, 22, .9), transparent 80
 .resume-section .resume .resume-content .content-item .experience .details .technologies div span{
   display: none;
   position: absolute;
-  top: 286vh;
+  top: 294vh;
   z-index: 1;
   font-size: clamp(12px, 10vw, 0.85vw);
   font-weight: 700;
