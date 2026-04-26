@@ -56,11 +56,13 @@
 
 .contact-section .outbox .right .contact-link {
   padding: 1rem 1.5rem;
-  display: inline-flex;
+  display: inline-flex !important;
   justify-content: space-between;
   align-items: center;
   gap: .8rem;
-  width: fit-content;
+  width: auto !important;
+  max-width: max-content;
+  flex: 0 0 auto;
   border: 1px solid var(--main-gradient-first);
   border-radius: 8px;
 
@@ -78,6 +80,7 @@
   -webkit-transition: background 400ms ease-in-out;
   transition: background 400ms ease-in-out;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .contact-section .outbox .right .contact-link img {
