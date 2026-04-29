@@ -1,4 +1,9 @@
 
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader-overlay');
+  if (loader) loader.classList.add('hidden');
+});
+
 const dot = document.createElement('div');
 dot.classList.add('cursor-dot');
 
